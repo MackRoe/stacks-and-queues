@@ -30,6 +30,8 @@ class LinkedStack(object):
     def length(self):
         """Return the number of items in this stack."""
         # TODO: Count number of items
+        stack_length = LinkedList.length()
+        return stack_length
 
     def push(self, item):
         """Insert the given item on the top of this stack.
