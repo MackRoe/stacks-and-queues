@@ -44,7 +44,7 @@ class LinkedStack(object):
         or None if this stack is empty."""
         # TODO: Return top item, if any
         if iterable is not None:
-            top_item = LinkedList.find_at_index(0)
+            top_item = list.find_at_index(0)
             return top_item
         else:
             return None
