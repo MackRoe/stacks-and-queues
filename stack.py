@@ -29,19 +29,25 @@ class LinkedStack(object):
 
     def length(self):
         """Return the number of items in this stack."""
-        # TODO: Count number of items
+        # Count number of items
         stack_length = LinkedList.length()
         return stack_length
 
     def push(self, item):
         """Insert the given item on the top of this stack.
         Running time: O(???) – Why? [TODO]"""
-        # TODO: Push given item
+        # Push given item
+        LinkedList.prepend(item)
 
     def peek(self):
         """Return the item on the top of this stack without removing it,
         or None if this stack is empty."""
         # TODO: Return top item, if any
+        if iterable is not None:
+            top_item = LinkedList.find_at_index(0)
+            return top_item
+        else:
+            return None
 
     def pop(self):
         """Remove and return the item on the top of this stack,
