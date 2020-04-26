@@ -54,6 +54,13 @@ class LinkedStack(object):
         or raise ValueError if this stack is empty.
         Running time: O(???) – Why? [TODO]"""
         # TODO: Remove and return top item, if any
+        # find top_item
+        top_item = list.peek()
+        # delete top_item
+        list.delete(top_item)
+        # return new_top_item
+        new_top_item = list.peek()
+        return new_top_item
 
 
 # Implement ArrayStack below, then change the assignment at the bottom
