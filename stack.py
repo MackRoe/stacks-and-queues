@@ -1,8 +1,5 @@
 #!python
-import sys, os
-sys.path.append(os.path.abspath(os.path.join('..', 'linkedlist')))
-
-from CS-1-3.linkedlist import LinkedList
+from linkedlist import LinkedList
 
 
 # Implement LinkedStack below, then change the assignment at the bottom
