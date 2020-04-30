@@ -105,6 +105,12 @@ class ArrayStack(object):
         """Return the item on the top of this stack without removing it,
         or None if this stack is empty."""
         # TODO: Return top item, if any
+        array_length = len(self.list)
+        stack_top = self.list[array_length - 1]
+        if stack_top != None:
+            return stack_top
+        else:
+            return None
 
     def pop(self):
         """Remove and return the item on the top of this stack,
