@@ -21,7 +21,7 @@ class LinkedStack(object):
     def is_empty(self):
         """Return True if this stack is empty, or False otherwise."""
         # Check if empty
-        if iterable is not None:
+        if self.list.length() != 0:
             return False
         else:
             return True
@@ -29,21 +29,22 @@ class LinkedStack(object):
     def length(self):
         """Return the number of items in this stack."""
         # Count number of items
-        stack_length = list.length()
+        stack_length = self.list.length()
         return stack_length
 
     def push(self, item):
         """Insert the given item on the top of this stack.
         Running time: O(???) – Why? [TODO]"""
         # Push given item
-        list.prepend(item)
+        list.list.prepend(item)
 
     def peek(self):
         """Return the item on the top of this stack without removing it,
         or None if this stack is empty."""
         # TODO: Return top item, if any
-        if iterable is not None:
-            top_item = list.find_at_index(0)
+        if self.list.length() != 0:
+            # index = self.length() - 1
+            top_item = self.list.get_at_index(0)
             return top_item
         else:
             return None
@@ -54,11 +55,11 @@ class LinkedStack(object):
         Running time: O(???) – Why? [TODO]"""
         # TODO: Remove and return top item, if any
         # find top_item
-        top_item = list.peek()
+        top_item = self.peek()
         # delete top_item
-        list.delete(top_item)
+        self.list.delete(top_item)
         # return new_top_item
-        new_top_item = list.peek()
+        new_top_item = self.peek()
         return new_top_item
 
 
