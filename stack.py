@@ -60,6 +60,7 @@ class LinkedStack(object):
         self.list.delete(top_item)
         # return new_top_item
         new_top_item = self.peek()
+        print("new top: ", new_top_item)
         return new_top_item
 
 
@@ -82,15 +83,23 @@ class ArrayStack(object):
     def is_empty(self):
         """Return True if this stack is empty, or False otherwise."""
         # TODO: Check if empty
+        if self.list.length() != 0:
+            return False
+        else:
+            return True
 
     def length(self):
         """Return the number of items in this stack."""
         # TODO: Count number of items
+        stack_length = self.list.length()
+        return stack_length
 
     def push(self, item):
         """Insert the given item on the top of this stack.
-        Running time: O(???) – Why? [TODO]"""
+        Running time: O(1)* – Why? [Unless the array needs to be resized,
+        the item can be appended without manipulating the array]"""
         # TODO: Insert given item
+        self.list.append(item)
 
     def peek(self):
         """Return the item on the top of this stack without removing it,
