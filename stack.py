@@ -52,7 +52,8 @@ class LinkedStack(object):
     def pop(self):
         """Remove and return the item on the top of this stack,
         or raise ValueError if this stack is empty.
-        Running time: O(???) – Why? [TODO]"""
+        Running time: O(n) – Why? [pop() calls peek() that calls length() from
+        LinkedList, which iterates using a while loop]"""
         # TODO: Remove and return top item, if any
         # find top_item
         top_item = self.peek()
