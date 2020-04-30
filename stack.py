@@ -115,8 +115,15 @@ class ArrayStack(object):
     def pop(self):
         """Remove and return the item on the top of this stack,
         or raise ValueError if this stack is empty.
-        Running time: O(???) – Why? [TODO]"""
+        Running time: O(1) – Why? [because the top of the stack is the end of
+        the array and no iteration is needed to find it]"""
         # TODO: Remove and return top item, if any
+        top = self.peek()
+        if top is None:
+            raise ValueError('List is Empty')
+        else:
+            self.list.pop(top)
+            return
 
 
 # Implement LinkedStack and ArrayStack above, then change the assignment below
