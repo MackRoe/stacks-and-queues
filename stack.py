@@ -106,8 +106,9 @@ class ArrayStack(object):
         or None if this stack is empty."""
         # TODO: Return top item, if any
         array_length = len(self.list)
-        stack_top = self.list[array_length - 1]
-        if stack_top is not None:
+
+        if len(self.list) != 0:
+            stack_top = self.list[array_length - 1]
             return stack_top
         else:
             return None
@@ -118,12 +119,14 @@ class ArrayStack(object):
         Running time: O(1) – Why? [because the top of the stack is the end of
         the array and no iteration is needed to find it]"""
         # TODO: Remove and return top item, if any
+        index = len(self.list) - 1
         top = self.peek()
         if top is None:
             raise ValueError('List is Empty')
         else:
-            self.list.pop(top)
-            return
+            print('top', top)
+            self.list.pop(index)
+            return top
 
 
 # Implement LinkedStack and ArrayStack above, then change the assignment below
