@@ -36,7 +36,7 @@ class LinkedStack(object):
         """Insert the given item on the top of this stack.
         Running time: O(???) – Why? [TODO]"""
         # Push given item
-        list.list.prepend(item)
+        self.list.prepend(item)
 
     def peek(self):
         """Return the item on the top of this stack without removing it,
