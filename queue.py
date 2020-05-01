@@ -44,6 +44,12 @@ class LinkedQueue(object):
         """Return the item at the front of this queue without removing it,
         or None if this queue is empty."""
         # TODO: Return front item, if any
+        if self.list.length() != 0:
+            # index = self.length() - 1
+            front = self.list.get_at_index(0)
+            return front
+        else:
+            return None
 
     def dequeue(self):
         """Remove and return the item at the front of this queue,
