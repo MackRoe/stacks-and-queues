@@ -59,7 +59,7 @@ class LinkedQueue(object):
         # TODO: Remove and return front item, if any
         # find top_item
         if self.list.length() != 0:
-            front = self.peek()
+            front = self.list.get_at_index(0)
             # delete top_item
             self.list.delete(front)
             return front
