@@ -30,7 +30,8 @@ class LinkedQueue(object):
     def length(self):
         """Return the number of items in this queue."""
         # TODO: Count number of items
-
+        queue_length = self.list.length()
+        return queue_length
 
     def enqueue(self, item):
         """Insert the given item at the back of this queue.
