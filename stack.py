@@ -34,7 +34,8 @@ class LinkedStack(object):
 
     def push(self, item):
         """Insert the given item on the top of this stack.
-        Running time: O(???) – Why? [TODO]"""
+        Running time: O(1) – Why? [the logic follows a straight line
+        without needing to loop]"""
         # Push given item
         self.list.prepend(item)
 
