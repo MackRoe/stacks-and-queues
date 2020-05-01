@@ -140,7 +140,7 @@ class LinkedList(object):
         Worst: large number of items to add]"""
         # Create a new node to hold the given item
         new_node = Node(item)
-        self.size +=1
+        self.size += 1
         # Check if this linked list is empty
         if self.is_empty():
             # Assign head to new node
