@@ -101,6 +101,7 @@ class ArrayQueue(object):
         Running time: O(1) – Why? [adding item to end of list requires no
         complex data manipulation nor looping]"""
         # TODO: Insert given item
+        self.list.append(item)
 
     def front(self):
         """Return the item at the front of this queue without removing it,
