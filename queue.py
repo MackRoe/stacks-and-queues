@@ -98,7 +98,8 @@ class ArrayQueue(object):
 
     def enqueue(self, item):
         """Insert the given item at the back of this queue.
-        Running time: O(???) – Why? [TODO]"""
+        Running time: O(1) – Why? [adding item to end of list requires no
+        complex data manipulation nor looping]"""
         # TODO: Insert given item
 
     def front(self):
