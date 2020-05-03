@@ -117,6 +117,13 @@ class ArrayQueue(object):
         left when an item is dequeued because the front of the queue is
         at index zero]"""
         # TODO: Remove and return front item, if any
+        front = self.front()
+        if front is None:
+            raise ValueError('List is Empty')
+        else:
+            print('Dequeued item: ', front)
+            self.list.pop(0)
+            return front
 
 
 # Implement LinkedQueue and ArrayQueue above, then change the assignment below
