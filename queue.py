@@ -93,6 +93,8 @@ class ArrayQueue(object):
     def length(self):
         """Return the number of items in this queue."""
         # TODO: Count number of items
+        qa_length = len(self.list)
+        return qa_length
 
     def enqueue(self, item):
         """Insert the given item at the back of this queue.
